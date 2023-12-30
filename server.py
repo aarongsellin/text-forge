@@ -12,4 +12,4 @@ def posts_endpoint():
 
 @app.get('/ping')
 def ping_endpoint():
-    return 'pong'
+    return {'pong':True}
