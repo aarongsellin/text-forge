@@ -7,4 +7,5 @@ posts = requests.get('https://jsonplaceholder.typicode.com/posts').json()
 
 @app.get('/posts')
 def posts_endpoint():
+    posts.sort(key=lambda post: -post['id'])
     return posts
